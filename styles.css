@@ -1,0 +1,138 @@
+/* styles.css */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #FFECD2 0%, #FFB57C 100%);
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  color: #D35400;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  color: #E67E22;
+  margin-top: 40px;
+  position: relative;
+  padding-bottom: 10px;
+}
+h2::after {
+  content: '🍕';
+  position: absolute;
+  right: -30px;
+  top: 0;
+  font-size: 1.2em;
+  animation: bounce 2s infinite;
+}
+
+/* Bounce animation for emojis */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) }
+  50% { transform: translateY(-8px) }
+}
+
+.language-selector {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.language-selector button {
+  font-family: 'Montserrat', sans-serif;
+  background: #E67E22;
+  color: white;
+  border: 2px solid #D35400;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+.language-selector button:hover {
+  background: #D35400;
+  transform: scale(1.1);
+}
+
+.menu-section {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.menu-section:hover {
+  transform: translateY(-5px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 12px;
+  font-size: 1.05em;
+  position: relative;
+  padding-left: 25px;
+  transition: color 0.3s;
+}
+ul li::before {
+  content: '🍽️';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+ul li:hover {
+  color: #D35400;
+}
+
+.topping {
+  display: block;
+  font-size: 0.9em;
+  color: #888;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #555;
+}
+footer p:first-child {
+  margin-bottom: 5px;
+}
+
+/* Hide all by default */
+.lang-content {
+  display: none;
+}
+
+/* RTL support */
+#lang-ar, #lang-ku {
+  direction: rtl;
+  text-align: right;
+}
+
+.qr-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .qr-section img,
+  .qr-section #qrcode canvas {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
