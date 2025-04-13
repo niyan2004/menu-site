@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4TASTE Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
+<body>
+  <div class="language-selector">
+    <button onclick="switchLanguage('lang-en')">English</button>
+    <button onclick="switchLanguage('lang-ku')">کوردی</button>
+    <button onclick="switchLanguage('lang-ar')">العربية</button>
+  </div>
+
+  <!-- English Version -->
+  <div id="lang-en" class="lang-content">
+    <header>
+      <h1>4TASTE Restaurant</h1>
+      <p>Opening Hours: Saturday to Thursday, 12:00 to 23:00</p>
+      <p>Location: Aram Village, 120m near Aram Village Service</p>
+      <p>Our meats are 100% organic</p>
+      <p>Phone: 0751 340 3400</p>
+    </header>
+    <section class="qr-section">
+        <h2>Scan to View Our Menu</h2>
+        <div id="qrcode"></div>
+      </section>
+      
+
+    <section class="menu-section">
+      <h2>Pizza</h2>
+      <ul>
+        <li>1- Margherita Pizza - 6000<br><span class="topping">Tomato sauce and cheese</span></li>
+        <li>2- Tuna Pizza - 6500<br><span class="topping">Tuna and onion</span></li>
+        <li>3- Pepperoni Pizza - 6500<br><span class="topping">Pepperoni and cheese</span></li>
+        <li>4- Bolognese Pizza - 6500<br><span class="topping">Minced meat sauce</span></li>
+        <li>5- Calzone Pizza (folded) - 6500<br><span class="topping">Minced meat and cheese</span></li>
+        <li>6- Veggie Pizza - 6500<br><span class="topping">Mushrooms, green pepper, onion, olives, corn</span></li>
+        <li>7- Chicken Pizza - 6500<br><span class="topping">Chicken and cheese</span></li>
+        <li>8- Mexican Pizza - 7000<br><span class="topping">Minced meat, jalapeño, onion, corn, green pepper</span></li>
+        <li>9- Mixed Meat Pizza - 7000<br><span class="topping">Minced meat, mushrooms, green pepper, onion, olives, corn</span></li>
+        <li>10- Mixed Chicken Pizza - 7000<br><span class="topping">Chicken, mushrooms, green pepper, onion, olives, corn</span></li>
+        <li>11- Doner Pizza - 7000<br><span class="topping">Doner meat and onion</span></li>
+        <li>12- 4TASTE Pizza - 7000<br><span class="topping">Chicken, meat, pepperoni, doner and tomato</span></li>
+      </ul>
+      <p>Small Pizza (25cm), Medium +3000 IQD, Large +6000 IQD</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>Doner (Beef or Chicken)</h2>
+      <ul>
+        <li>14- Small Sandwich - 2000 IQD</li>
+        <li>15- Large Sandwich - 5000 IQD</li>
+        <li>16- Doner Roll - 6000 IQD</li>
+        <li>17- Doner Plate - 8000 IQD<br><span class="topping">Doner, onion, lettuce, tomato and fries</span></li>
+        <li>18- Special - 7000 IQD<br><span class="topping">Doner with cheese, lettuce, tomato and onion</span></li>
+      </ul>
+    </section>
+
+    <section class="menu-section">
+      <h2>Burgers</h2>
+      <ul>
+        <li>19- Classic Burger<br><span class="topping">Lettuce, tomato and onion</span></li>
+        <li>20- Cheese Burger<br><span class="topping">Lettuce, tomato, onion, cheese</span></li>
+        <li>21- BBQ Burger<br><span class="topping">Lettuce, tomato, onion, BBQ sauce</span></li>
+      </ul>
+      <p>Burger Price: 90g meat - 6000 | 150g meat - 9000<br>All burgers served with fries</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>Lasagna</h2>
+      <p>13- Lasagna - 7500 IQD</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>Cold Drinks</h2>
+      <ul>
+        <li>Cola - 750 IQD</li>
+        <li>Ayran - 500 IQD</li>
+        <li>Water - 500 IQD</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Instagram: @4tasterestaurant</p>
+      <p>© All rights reserved by Niyan</p>
+    </footer>
+  </div>
+
+  <!-- Kurdish Version -->
+  <div id="lang-ku" class="lang-content">
+    <header>
+      <h1>چێشتخانەی 4TASTE</h1>
+      <p>کاتەکانی کارکردن: شەممە تا پنجشەممە، 12:00 تا 23:00</p>
+      <p>شوێن: گوندی ئه‌رام، ١٢٠مه‌تر نزیک خزمه‌تی گوندی ئه‌رام</p>
+      <p>گۆشتەکانمان %١٠٠ ئۆرگانیکییە</p>
+      <p>تەلەفۆن: 0751 340 3400</p>
+    </header>
+
+    <section class="menu-section">
+      <h2>پیتزا</h2>
+      <ul>
+        <li>1- پیتزای مارگه‌ریتا - 6000<br><span class="topping">سووسی هێلکە و پنیر</span></li>
+        <li>2- پیتزای تونا - 6500<br><span class="topping">تونا و پیاز</span></li>
+        <li>3- پیتزای پێپه‌ڕۆنی - 6500<br><span class="topping">پێپه‌ڕۆنی و پنیر</span></li>
+        <li>4- پیتزای بولۆنیز - 6500<br><span class="topping">سووسە گوشتە قیمەکە</span></li>
+        <li>5- پیتزای کەلزۆن (تۆمارکراو) - 6500<br><span class="topping">قیمە و پنیر</span></li>
+        <li>6- پیتزای سەوزە - 6500<br><span class="topping">قارچ، فلفڵی سه‌وز، پیاز، زیتوون، ڕۆن</span></li>
+        <li>7- پیتزای مرۆش - 6500<br><span class="topping">مرۆش و پنیر</span></li>
+        <li>8- پیتزای مەکسیکی - 7000<br><span class="topping">قیمە، ژالاپێنۆ، پیاز، ڕۆن، فلفڵی سه‌وز</span></li>
+        <li>9- پیتزای گۆشتی تێکەڵ - 7000<br><span class="topping">قیمە، قارچ، فلفڵی سه‌وز، پیاز، زیتوون، ڕۆن</span></li>
+        <li>10- پیتزای مرۆشی تێکەڵ - 7000<br><span class="topping">مرۆش، قارچ، فلفڵی سه‌وز، پیاز، زیتوون، ڕۆن</span></li>
+        <li>11- پیتزای دونەر - 7000<br><span class="topping">گوشت دونەر و پیاز</span></li>
+        <li>12- پیتزای 4TASTE - 7000<br><span class="topping">مرۆش، گوشت، پێپه‌ڕۆنی، دونەر و هێلکە</span></li>
+      </ul>
+      <p>پیتزای بچوک (25cm)، نیوە گەورە +3000 IQD، گەورە +6000 IQD</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>دۆنەر (گۆشت یان مرۆش)</h2>
+      <ul>
+        <li>14- ساندویچی بچووک - 2000 IQD</li>
+        <li>15- ساندویچی گەورە - 5000 IQD</li>
+        <li>16- رۆڵی دۆنەر - 6000 IQD</li>
+        <li>17- پلیتەی دۆنەر - 8000 IQD<br><span class="topping">دۆنەر، پیاز، کاهو، هێلکە و فڕێس</span></li>
+        <li>18- تایبەت - 7000 IQD<br><span class="topping">دۆنەر، پنیر، کاهو، هێلکە، پیاز</span></li>
+      </ul>
+    </section>
+
+    <section class="menu-section">
+      <h2>بۆرگەر</h2>
+      <ul>
+        <li>19- بۆرگەر کلاسیکی<br><span class="topping">کاهو، هێلکە و پیاز</span></li>
+        <li>20- بۆرگەر بە پنیر<br><span class="topping">کاهو، هێلکە، پیاز، پنیر</span></li>
+        <li>21- بۆرگەر BBQ<br><span class="topping">کاهو، هێلکە، پیاز، سووس BBQ</span></li>
+      </ul>
+      <p>نرخ: 90 گرام گوشت - 6000 | 150 گرام گوشت - 9000<br>هەموو بۆرگەرەکان بە فڕێس دابین دەکرێن</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>لازانیە</h2>
+      <p>13- لازانیە - 7500 IQD</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>خواردنی سارد</h2>
+      <ul>
+        <li>کۆلا - 750 IQD</li>
+        <li>ئەیران - 500 IQD</li>
+        <li>ئاوو - 500 IQD</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>ئینستاگرام: @4tasterestaurant</p>
+      <p>© All rights reserved by Niyan</p>
+    </footer>
+  </div>
+
+  <!-- Arabic Version -->
+  <div id="lang-ar" class="lang-content">
+    <header>
+      <h1>مطعم 4TASTE</h1>
+      <p>ساعات العمل: من السبت إلى الخميس، من 12:00 إلى 23:00</p>
+      <p>الموقع: قرية آرام، ١٢٠م بجانب خدمة قرية آرام</p>
+      <p>لحومنا عضوية 100%</p>
+      <p>هاتف: 0751 340 3400</p>
+    </header>
+
+    <section class="menu-section">
+      <h2>البيتزا</h2>
+      <ul>
+        <li>1- بيتزا مارجريتا - 6000<br><span class="topping">صلصة الطماطم والجبن</span></li>
+        <li>2- بيتزا التونة - 6500<br><span class="topping">تونة وبصل</span></li>
+        <li>3- بيتزا ببروني - 6500<br><span class="topping">ببروني وجبن</span></li>
+        <li>4- بيتزا بولونيز - 6500<br><span class="topping">صلصة اللحم المفروم</span></li>
+        <li>5- بيتزا كالزوني (مطوية) - 6500<br><span class="topping">لحم مفروم وجبن</span></li>
+        <li>6- بيتزا الخضروات - 6500<br><span class="topping">فطر، فلفل أخضر، بصل، زيتون، ذرة</span></li>
+        <li>7- بيتزا الدجاج - 6500<br><span class="topping">دجاج وجبن</span></li>
+        <li>8- بيتزا مكسيكية - 7000<br><span class="topping">لحم مفروم، هالبينو، بصل، ذرة، فلفل أخضر</span></li>
+        <li>9- بيتزا لحوم مشكلة - 7000<br><span class="topping">لحم، فطر، فلفل أخضر، بصل، زيتون، ذرة</span></li>
+        <li>10- بيتزا دجاج مشكلة - 7000<br><span class="topping">دجاج، فطر، فلفل أخضر، بصل، زيتون، ذرة</span></li>
+        <li>11- بيتزا دونر - 7000<br><span class="topping">لحم دونر وبصل</span></li>
+        <li>12- بيتزا 4TASTE - 7000<br><span class="topping">دجاج، لحم، ببروني، دونر وطماطم</span></li>
+      </ul>
+      <p>بيتزا صغيرة (25سم)، وسط +3000 دينار، كبيرة +6000 دينار</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>دونر (لحم أو دجاج)</h2>
+      <ul>
+        <li>14- ساندويتش صغير - 2000 دينار</li>
+        <li>15- ساندويتش كبير - 5000 دينار</li>
+        <li>16- رول دونر - 6000 دينار</li>
+        <li>17- طبق دونر - 8000 دينار<br><span class="topping">دونر، بصل، خس، طماطم وبطاطا مقلية</span></li>
+        <li>18- خاص - 7000 دينار<br><span class="topping">دونر، جبن، خس، طماطم وبصل</span></li>
+      </ul>
+    </section>
+
+    <section class="menu-section">
+      <h2>البرجر</h2>
+      <ul>
+        <li>19- برجر كلاسيكي<br><span class="topping">خس، طماطم وبصل</span></li>
+        <li>20- برجر بالجبن<br><span class="topping">خس، طماطم، بصل، جبن</span></li>
+        <li>21- برجر باربيكيو<br><span class="topping">خس، طماطم، بصل، صوص باربيكيو</span></li>
+      </ul>
+      <p>السعر: 90غ لحم - 6000 | 150غ لحم - 9000<br>جميع البرجرات تقدم مع البطاطا</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>لازانيا</h2>
+      <p>13- لازانيا - 7500 دينار</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>المشروبات الباردة</h2>
+      <ul>
+        <li>كولا - 750 دينار</li>
+        <li>عيران - 500 دينار</li>
+        <li>ماء - 500 دينار</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>إنستغرام: @4tasterestaurant</p>
+      <p>© جميع الحقوق محفوظة لـ Niyan</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang-content').forEach(div => {
+        div.style.display = 'none';
+      });
+      document.getElementById(lang).style.display = 'block';
+    }
+    // Show English by default
+    switchLanguage('lang-en');
+    
+  </script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "http://127.0.0.1:5500/menu.html",
+      width: 200,
+      height: 200,
+      colorDark: "#333333",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+  
+</body>
+</html>
+
