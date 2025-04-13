@@ -124,15 +124,7 @@ footer p:first-child {
   text-align: right;
 }
 
-.qr-section {
-    text-align: center;
-    margin: 40px 0;
-  }
+
   
-  .qr-section img,
-  .qr-section #qrcode canvas {
-    display: block;
-    margin: 0 auto;
-  }
   
   
