@@ -1,7 +1,7 @@
 FROM nginx:stable-alpine
 
 # Copy site files into nginx webroot
-COPY . /usr/share/nginx/html:ro
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
 

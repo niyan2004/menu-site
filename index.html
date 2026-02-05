@@ -6,8 +6,6 @@
   <title>4TASTE Restaurant Menu</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-
 <body>
   <div class="language-selector">
     <button onclick="switchLanguage('lang-en')">English</button>
@@ -92,7 +90,7 @@
         <li>Water - 500 IQD</li>
       </ul>
     </section>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://niyan2004.github.io/menu-site" alt="QR Code for your menu" />
+    <img style="display:block; margin:30px auto;" src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://niyan2004.github.io/menu-site" alt="QR Code for your menu" />
     <footer>
       <p>Instagram: @4tasterestaurant</p>
       <p>© All rights reserved by Niyan</p>
@@ -273,19 +271,7 @@
     }
     // Show English by default
     switchLanguage('lang-en');
-    
   </script>
-  <script>
-    new QRCode(document.getElementById("qrcode"), {
-      text: "http://127.0.0.1:5500/menu.html",
-      width: 200,
-      height: 200,
-      colorDark: "#333333",
-      colorLight: "#ffffff",
-      correctLevel: QRCode.CorrectLevel.H
-    });
-  </script>
-  
 </body>
 </html>
 
